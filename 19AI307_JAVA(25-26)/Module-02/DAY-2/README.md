@@ -59,3 +59,4 @@ Thus a Java program to Write a class with one static method and one non-static m
 
 
 
+
