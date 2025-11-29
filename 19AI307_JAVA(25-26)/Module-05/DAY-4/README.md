@@ -65,3 +65,4 @@ public class TwoThreadPriority {
 Multithreading was successfully implemented. Multiple threads executed by setting the priority, demonstrating proper thread creation.
 
 
+
