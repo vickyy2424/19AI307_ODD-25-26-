@@ -1,17 +1,18 @@
-# Ex.No:2(B) METHODS
+# Ex.No:2(A) CLASS AND OBJECT
 
 ## QUESTION:
-Write a class with one static method and one non-static method. Call both from the main() method.
+Define a class Car with brand (String), color (String), and year (int). Create 2 different objects of Car  Assign values to attributes. Print the details of both cars. 
 
 ## AIM:
-To write a class with one static method and one non-static method. Call both from the main() method.
+To create a Car class with attributes brand, color, and year, and display details of two objects of the class.
 
 ## ALGORITHM :
-1.	Start the program.
-2.	Import the necessary package 'java.util'
-3.	Create two methods, one static and one non static.
-4.	Call both the methods.
-5.	Stop the program. 
+1.Define a class named Car.
+2.Declare three attributes: brand, color, and year.
+3.Create a constructor to initialize these attributes.
+4.Create a method to display the car details.
+5.In the main method, create two objects of the Car class.
+6.Print the details of both objects.
 
 
 
@@ -20,28 +21,47 @@ To write a class with one static method and one non-static method. Call both fro
 ## PROGRAM:
  ```
 /*
-Program to implement a Methods using Java
+Program to implement a Class and Objects using Java
 Developed by: Vigneshwaran S
-RegisterNumber:  212224060301
+RegisterNumber: 212224060301
 */
 ```
 
 ## SOURCE CODE:
-
 ```
-public class Main{
-    public static void main(String[] args){
-        staticMethod();
-        Main obj = new Main();
-        obj.nonStaticMethod();
+import java.util.*;
+class Car {
+    String brand;
+    String color;
+    int year;
+
+    void printDetails() {
+        System.out.println("Brand: "+brand);
+        System.out.println("Color: "+color);
+        System.out.println("Year: "+year);
+        
     }
-    static void staticMethod(){
-        System.out.println("I am static");
+}
+
+class prog {
+    public static void main(String[] args) {
+        // Your Code Here
+        Scanner sc = new Scanner(System.in);
+        Car c1 = new Car();
+        c1.brand = sc.next();
+        c1.color = sc.next();
+        c1.year = sc.nextInt();
+        
+        Car c2 = new Car();
+        c2.brand = sc.next();
+        c2.color = sc.next();
+        c2.year = sc.nextInt();
+        
+        c1.printDetails();
+        c2.printDetails();
+        sc.close();
+
     }
-    void nonStaticMethod(){
-        System.out.println("I am non-static");
-    }
-    
 }
 ```
 
@@ -49,12 +69,17 @@ public class Main{
 
 
 
+
 ## OUTPUT:
-<img width="1232" height="287" alt="image" src="https://github.com/user-attachments/assets/364c7006-b038-487f-a174-70e4f19f54e1" />
+
+<img width="1223" height="700" alt="image" src="https://github.com/user-attachments/assets/c7950b60-73e5-4e60-9a74-eec1b1a8011f" />
 
 
 
 ## RESULT:
-Thus a Java program to Write a class with one static method and one non-static method, and call both from the main() method is written and passes all the test cases. 
+The Car class was successfully implemented with attributes brand, color, and year. Two objects were created and their details were displayed correctly, confirming proper class functionality.
+
+
+
 
 
