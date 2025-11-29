@@ -19,8 +19,8 @@ To write, compile and execute a simple Java program that displays a message on t
  ```
 /*
 Program to implement variables and Operators using Java
-Developed by: Preethi D
-RegisterNumber:  212224040250
+Developed by: Vigneshwaran S
+RegisterNumber:  212224060301
 */
 ```
 
